@@ -9,6 +9,7 @@ export default function BlogPost({ data }) {
     <Layout>
       <div>
         <h1>{post.title}</h1>
+        <h2>{post.date}</h2>
         <div dangerouslySetInnerHTML={{ __html: post.content }} />
       </div>
     </Layout>
@@ -20,6 +21,7 @@ export const query = graphql`
       nodes {
         title
         content
+        date
       }
     }
   }

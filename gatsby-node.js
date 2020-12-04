@@ -10,6 +10,7 @@ exports.createPages = ({ graphql, actions }) => {
           excerpt
           content
           slug
+          date
         }
       }
     }

@@ -7,8 +7,8 @@ export default function Home({ data }) {
   return (
     <Layout>
       <SEO title="home" />
-      <h1>My WordPress Blog</h1>
-      <h4>Posts</h4>
+      <h1>Aktualności</h1>
+      <h4>Najnowsze wpisy</h4>
       {data.allWpPost.nodes.map((node) => (
         <div key={node.slug}>
           {/* highlight-start */}
